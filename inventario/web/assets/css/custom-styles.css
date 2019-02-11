@@ -348,7 +348,7 @@ background: #172D44;
 	
 }
 .top-navbar {
-	background:#09192A;
+	background:grey;
 	border-bottom:none;
 	
 }
@@ -356,7 +356,7 @@ background: #172D44;
 margin-right: 2px;
 }
 .top-navbar .navbar-brand:hover { 
-color:#fff;
+color:black;
 
 }
 .dropdown-user li {
@@ -367,7 +367,7 @@ border:0px solid black;
      
 }
 .navbar-header {
-    background: #09192A;
+    background: grey;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: #B40101;
