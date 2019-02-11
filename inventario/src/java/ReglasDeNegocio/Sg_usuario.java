@@ -193,10 +193,10 @@ public class Sg_usuario {
           //CREAMOS EL ARRALIST DE PARAMETROS PARA ASIGANR A MI PRIMER COMANDO
           ArrayList<Parametro> parametros = new ArrayList<Parametro>();
           //llenamos el arraylist con todos los parametros          
-          StringEncrypter encriptar = new StringEncrypter("aplicaciones"); 
-          String pass = encriptar.encrypt(sg_usuarios.getContrasenia());
+          //StringEncrypter encriptar = new StringEncrypter("aplicaciones"); 
+          //String pass = encriptar.encrypt(sg_usuarios.getContrasenia());
           parametros.add(new Parametro(1, sg_usuarios.getNombre_usuario()));
-          parametros.add(new Parametro(2, pass));
+          parametros.add(new Parametro(2, sg_usuarios.getContrasenia()));
           parametros.add(new Parametro(3, sg_usuarios.getIdentificacion()));
           //llenar el comando con los parametros
           cmd.setLstParametros(parametros);
@@ -302,11 +302,11 @@ public static Sg_usuario sg_usuarios_buscar_credenciales(String pinombre_usuario
           preStm=con.creaPreparedSmt(sql);
           //ejecuto el prepardestatement y le asigno a mi resulset
           
-          StringEncrypter encriptar = new StringEncrypter("aplicaciones"); 
-          String pass = encriptar.encrypt(picontrasenia);
+          //StringEncrypter encriptar = new StringEncrypter("aplicaciones"); 
+          //String pass = encriptar.encrypt(picontrasenia);
           
           preStm.setString(1, pinombre_usuario);
-          preStm.setString(2, pass);
+          preStm.setString(2,picontrasenia);
           rs= con.ejecutaPrepared(preStm);
           obj=null;
           while (rs.next()) {
