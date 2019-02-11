@@ -69,7 +69,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                    
+                    <a href="pagina.htm" target="_self">Enlace</a>
                            
                     <li>
                         <a href="mod_inventario/categorias/listar.jsp"><i class="fa fa-edit"></i> Categorias</a>
