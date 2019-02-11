@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login |CódigoMasters|</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/estilos_1.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         
         <div class="formulario">
          <h1 align="center" >
-             <a>  <h1 align="center"> Carlita<small>Store</small></h1></a>
+             <a>  <h1 align="center">Variedades Carlita</small></h1></a>
             </h1>
            
  
@@ -49,17 +49,18 @@
                 
             
                     <h4 align="center">
-                    <button  id="btn_guardar" name="btn_guardar" type="submit" class="btn btn-primary" >Guardar</button>
+                               <button  id="btn_guardar" name="btn_guardar" type="submit" class="btn btn-primary" >Guardar</button>
              
                     </h4>
-          
+                    <h4 align="center">
+                    <button  id="btn_regresar" name="btn_regresar" type="submit" class="btn btn-primary" >Regresar</button>  
+                             
+                    </h4>
                
                
             </form>
         </div>
-        <div class="reset-password">
-            <a href="#">Digite usuario y contraseña</a>
-        </div>
+        
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>    
     <script src="js/main.js"></script>
