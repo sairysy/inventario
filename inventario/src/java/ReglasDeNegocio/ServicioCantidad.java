@@ -1,5 +1,9 @@
-
-package servicios;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ReglasDeNegocio;
 
 import AccesoADatos.Conexion;
 import AccesoADatos.Global;
@@ -9,20 +13,22 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 
-public class StockProducto {
-       private int productoid;    
+public class ServicioCantidad {
+        private int productoid;    
         private String nombre;        
         private String nombreproducto;        
-        private int stock ;  
+        private int cantidadprodcomprados;           
+        private int cantidadprodvendidos; 
 
-    public StockProducto() {
+    public ServicioCantidad() {
     }
 
-    public StockProducto(int productoid, String nombre, String nombreproducto, int stock) {
+    public ServicioCantidad(int productoid, String nombre, String nombreproducto, int cantidadprodcomprados, int cantidadprodvendidos) {
         this.productoid = productoid;
         this.nombre = nombre;
         this.nombreproducto = nombreproducto;
-        this.stock = stock;
+        this.cantidadprodcomprados = cantidadprodcomprados;
+        this.cantidadprodvendidos = cantidadprodvendidos;
     }
 
     public int getProductoid() {
@@ -49,19 +55,30 @@ public class StockProducto {
         this.nombreproducto = nombreproducto;
     }
 
-    public int getStock() {
-        return stock;
+    public int getCantidadprodcomprados() {
+        return cantidadprodcomprados;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setCantidadprodcomprados(int cantidadprodcomprados) {
+        this.cantidadprodcomprados = cantidadprodcomprados;
     }
- 
-        public static ArrayList<StockProducto> stockproducto() throws Exception
+
+    public int getCantidadprodvendidos() {
+        return cantidadprodvendidos;
+    }
+
+    public void setCantidadprodvendidos(int cantidadprodvendidos) {
+        this.cantidadprodvendidos = cantidadprodvendidos;
+    }
+
+   
+    
+        
+        public static ArrayList<ServicioCantidad> servicio_cantidad() throws Exception
         {
          //CREO LISTA QUE RECIBIRA LOS DATOS DEL RESULSET
-        ArrayList<StockProducto> lista= new ArrayList<StockProducto>();
-          StockProducto obj= new StockProducto();
+        ArrayList<ServicioCantidad> lista= new ArrayList<ServicioCantidad>();
+          ServicioCantidad obj= new ServicioCantidad();
        ResultSet rs= null;
       //LLAMO LA CONEXION
       Conexion con= new Conexion(Global.driver, Global.url, Global.user, Global.pass);
@@ -69,19 +86,19 @@ public class StockProducto {
       PreparedStatement preStm= null;
       try {
           //declaro mi sql
-          String sql= "select * from public.stock_productos()";
+          String sql= "select * from public.cordenes_vs_cventas()";
           //creo mi preparedstatement
           preStm=con.creaPreparedSmt(sql);
           //ejecuto el prepardestatement y le asigno a mi resulset          
           rs= con.ejecutaPrepared(preStm);
           obj=null;
           while (rs.next()) {
-              obj= new StockProducto();
+              obj= new ServicioCantidad();
               obj.setProductoid(rs.getInt("pproductoid"));
               obj.setNombre(rs.getString("pnombre"));
               obj.setNombreproducto(rs.getString("pnombreproducto"));
-              obj.setStock(rs.getInt("pstock"));              
-             
+              obj.setCantidadprodcomprados(rs.getInt("pcantidadprodcomprados"));              
+              obj.setCantidadprodvendidos(rs.getInt("pcantidadprodvendidos"));
               lista.add(obj);
           }
       } catch (SQLException e) {

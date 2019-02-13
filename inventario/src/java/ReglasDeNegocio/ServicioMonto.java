@@ -1,5 +1,5 @@
 
-package servicios;
+package ReglasDeNegocio;
 
 import AccesoADatos.Conexion;
 import AccesoADatos.Global;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ServicioMonto {
         private int productoid;    
-        private String nombrecategoria;        
+        private String nombre;        
         private String nombreproducto;        
         private double montoprodcompados;           
         private double montoprodvendidos;
@@ -19,9 +19,9 @@ public class ServicioMonto {
     public ServicioMonto() {
     }
 
-    public ServicioMonto(int productoid, String nombrecategoria, String nombreproducto, double montoprodcompados, double montoprodvendidos) {
+    public ServicioMonto(int productoid, String nombre, String nombreproducto, double montoprodcompados, double montoprodvendidos) {
         this.productoid = productoid;
-        this.nombrecategoria = nombrecategoria;
+        this.nombre = nombre;
         this.nombreproducto = nombreproducto;
         this.montoprodcompados = montoprodcompados;
         this.montoprodvendidos = montoprodvendidos;
@@ -44,15 +44,15 @@ public class ServicioMonto {
     /**
      * @return the nombrecategoria
      */
-    public String getNombrecategoria() {
-        return nombrecategoria;
+    public String getNombre() {
+        return nombre;
     }
 
     /**
      * @param nombrecategoria the nombrecategoria to set
      */
-    public void setNombrecategoria(String nombrecategoria) {
-        this.nombrecategoria = nombrecategoria;
+    public void setNombre(String nombrecategoria) {
+        this.nombre = nombrecategoria;
     }
 
     /**
@@ -118,7 +118,7 @@ public class ServicioMonto {
           while (rs.next()) {
               obj= new ServicioMonto();
               obj.setProductoid(rs.getInt("pproductoid"));
-              obj.setNombrecategoria(rs.getString("pnombrecategoria"));
+              obj.setNombre(rs.getString("pnombre"));
               obj.setNombreproducto(rs.getString("pnombreproducto"));
               obj.setMontoprodcompados(rs.getInt("pmontoprodcomprados"));              
               obj.setMontoprodvendidos(rs.getInt("pmontoprodvendidos"));

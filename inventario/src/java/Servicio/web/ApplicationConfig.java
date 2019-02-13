@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package servicios;
+package Servicio.web;
 
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ws.rs.core.Application;
 
 /**
  *
- * @author ESCUELA
+ * @author Cristian
  */
 @javax.ws.rs.ApplicationPath("webresources")
 public class ApplicationConfig extends Application {
@@ -18,7 +20,16 @@ public class ApplicationConfig extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new java.util.HashSet<>();
-        addRestResourceClasses(resources);
+        
+        try {
+            Class jsonProvider=Class.forName("org.glassfish.jersey.jackson.JacksonFeature");
+         resources.add(jsonProvider);
+        } catch (ClassNotFoundException ex) {
+            
+            Logger.getLogger(ApplicationConfig.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+           addRestResourceClasses(resources);
         return resources;
     }
 
@@ -29,6 +40,8 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(Servicio.web.GenericResource.class);
     }
+    
     
 }
