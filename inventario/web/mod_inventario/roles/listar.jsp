@@ -56,7 +56,7 @@
         </div>
        <% }%>
         <!--Fin Sección alerta-->
-        <center>  <button type="button" ><strong><a href="../../Menu.html">MENU</a></strong></button></center>
+       
          <h1>Rol</h1> 
            <button type="button" onclick="return modalnuevo();" class="btn btn-primary" data-toggle="modal" data-target="#ModalNuevo"> Nuevo</button>  
           
@@ -80,11 +80,12 @@
                       <button type="button"  onclick="return modaleditar(<%= sg_roles.getRolid()%>)" class="btn btn-primary" data-toggle="modal" data-target="#ModalEditar">Editar</button>  
 
                    </td>
+                    <a class="btn btn-primary" href="../../Menu.jsp" role="button">Volver</a>
                 </tr>
                <%}%>                
                 </tbody>           
             </table>
-                
+                <center><a class="btn btn-primary" href="../../Menu.jsp" role="button">Volver</a></center>>
                 <div class="modal fade" id="ModalEditar" class="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    
                 <div class="modal-dialog" role="document">

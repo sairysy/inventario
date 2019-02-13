@@ -61,7 +61,7 @@
         </div>
        <% }%>
         <!--Fin Sección alerta-->
-        <center>  <button type="button" ><strong><a href="../../Menu.html">MENU</a></strong></button></center>
+       
          <h1>Productos</h1> 
            <button type="button" onclick="return modalnuevo();" class="btn btn-primary" data-toggle="modal" data-target="#ModalNuevo"> Nuevo</button>  
           
@@ -87,11 +87,12 @@
                       <button type="button"  onclick="return modaleditar(<%= producto.getProductoid()%>)" class="btn btn-primary" data-toggle="modal" data-target="#ModalEditar">Editar</button>  
 
                    </td>
+             
                 </tr>
                <%}%>                
                 </tbody>           
             </table>
-                
+                <center><a class="btn btn-primary" href="../../Menu.jsp" role="button">Volver</a></center>>
                 <div class="modal fade" id="ModalEditar" class="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    
                 <div class="modal-dialog" role="document">

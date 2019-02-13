@@ -82,11 +82,12 @@
                       <button type="button"  onclick="return modaleditar(<%= proveedor.getProveedorid()%>)" class="btn btn-primary" data-toggle="modal" data-target="#ModalEditar">Editar</button>  
 
                    </td>
+
                 </tr>
                <%}%>                
                 </tbody>           
             </table>
-                
+                <center><a class="btn btn-primary" href="../../Menu.jsp" role="button">Volver</a></center>>
                 <div class="modal fade" id="ModalEditar" class="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    
                 <div class="modal-dialog" role="document">

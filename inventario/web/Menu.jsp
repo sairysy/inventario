@@ -81,18 +81,18 @@
                     <li>
                         <a href="mod_inventario/proveedores/listar.jsp"><i class="fa fa-edit"></i> Proveedores</a>
                     </li><li>
-                        <a href="mod_inventario/Ordenes/listar.jsp"><i class="fa fa-edit"></i> Ordenes</a>
+                        <a href="mod_inventario/ordenes/listar.jsp"><i class="fa fa-edit"></i> Ordenes</a>
                     </li><li>
-                        <a href="mod_inventario/Ventas/listar.jsp"><i class="fa fa-edit"></i> Ventas</a>
+                        <a href="mod_inventario/venta/listar.jsp"><i class="fa fa-edit"></i> Ventas</a>
                     </li>
                     <li>
-                        <a href="mod_inventario/Usuarios/listar.jsp"><i class="fa fa-edit"></i> Usuarios</a>
+                        <a href="mod_inventario/usuarios/listar.jsp"><i class="fa fa-edit"></i> Usuarios</a>
                     </li>
                     <li>
-                        <a href="mod_inventario/Roles/listar.jsp"><i class="fa fa-edit"></i> Roles</a>
+                        <a href="mod_inventario/roles/listar.jsp"><i class="fa fa-edit"></i> Roles</a>
                     </li>
                     <li>
-                        <a href="mod_inventario/Paginas/listar.jsp"><i class="fa fa-edit"></i> Paginas</a>
+                        <a href="mod_inventario/paginas/listar.jsp"><i class="fa fa-edit"></i> Paginas</a>
                     </li>
 
      
