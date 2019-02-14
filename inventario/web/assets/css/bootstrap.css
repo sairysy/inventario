@@ -3779,7 +3779,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-toggle {
-    display: none;
+    /*display: none;*/
   }
 }
 .navbar-nav {
@@ -3946,7 +3946,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color:black;
+  color:white;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
