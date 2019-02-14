@@ -32,7 +32,7 @@
 					</div>
 					
                                         <h3 align="center">
-                                        <button id="btn_guardar" name="btn_guardar" type="submit" class="btn btn-info">Ingresar</button>
+                                        <button id="btn_guardar" onclick="btn_guardar">Ingresar</button>
 				        </h3>
 
 				
