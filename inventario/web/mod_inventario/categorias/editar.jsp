@@ -23,13 +23,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-    div { 
-      width: 50%;
-      height: 200px;
-      background-color: #00FF00; 
-    }
-      </style>
+       
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar Categoria</title>
      
