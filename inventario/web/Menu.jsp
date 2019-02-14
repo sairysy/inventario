@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Menu</a>
+                <a class="navbar-brand" href="#">Menú</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -70,7 +70,7 @@
                 <ul class="nav" id="main-menu">
                            
                     <li>
-                        <a href="mod_inventario/categorias/listar.jsp"><i class="fa fa-edit"></i> Categorias</a>
+                        <a href="mod_inventario/categorias/listar.jsp"><i class="fa fa-edit"></i> Categorías</a>
                     </li>
                    <li>
                         <a href="mod_inventario/clientes/listar.jsp"><i class="fa fa-edit"></i> Clientes</a>
@@ -81,7 +81,7 @@
                     <li>
                         <a href="mod_inventario/proveedores/listar.jsp"><i class="fa fa-edit"></i> Proveedores</a>
                     </li><li>
-                        <a href="mod_inventario/ordenes/listar.jsp"><i class="fa fa-edit"></i> Ordenes</a>
+                        <a href="mod_inventario/ordenes/listar.jsp"><i class="fa fa-edit"></i> Órdenes</a>
                     </li><li>
                         <a href="mod_inventario/venta/listar.jsp"><i class="fa fa-edit"></i> Ventas</a>
                     </li>
@@ -92,7 +92,7 @@
                         <a href="mod_inventario/roles/listar.jsp"><i class="fa fa-edit"></i> Roles</a>
                     </li>
                     <li>
-                        <a href="mod_inventario/paginas/listar.jsp"><i class="fa fa-edit"></i> Paginas</a>
+                        <a href="mod_inventario/paginas/listar.jsp"><i class="fa fa-edit"></i> Páginas</a>
                     </li>
 
      
