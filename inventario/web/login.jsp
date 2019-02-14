@@ -32,7 +32,8 @@
 					</div>
 					
                                         <h3 align="center">
-                                        <button id="btn_guardar" onclick="btn_guardar">Ingresar</button>
+                                            <button onclick="window.location('btn_guardar')" value="Ingresar">Ingresar
+                                        </button>
 				        </h3>
 
 				
