@@ -108,8 +108,9 @@
                     <div class="col-md-12">
                         <h1 class="page-header">
                             Variedades Carlita</small>-->
-                            <img src="img/menu2.jpg" alt=""/>
+                            <img src="img/fond_Menu.JPG" alt=""/>
                         <!--</h1>
+                       
                     </div>
                 <!--</div>-->
                 <!-- /. ROW  -->     
