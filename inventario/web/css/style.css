@@ -141,6 +141,10 @@ a:hover {
 .navbar-default {
 	background-color: #272727;
 	border-color:#272727;
+        position: fixed;
+       left: 0;
+      
+       right: 0;
 }
 
 /*===========================
