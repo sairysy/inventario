@@ -32,7 +32,9 @@
 					</div>
 					
                                         <h3 align="center">
-                                            <button onclick= "location= 'btn_guardar'"/>Ingresar </button>
+                                            <button  id="btn_guardar" name="btn_guardar" type="submit" class="btn btn-primary" href="btn_guardar"/>
+                                            Ingresar</button> 
+                                           <!-- <button onclick= "location= 'btn_guardar'"/>Ingresar </button>-->
 				        </h3>
 
 				
@@ -50,14 +52,7 @@
             
                     <h4 align="center">
                                <button  id="btn_guardar" name="btn_guardar" type="submit" class="btn btn-primary" >Guardar</button>
-             
-                    </h4>
-                    <h4 align="center">
-                    <button  id="btn_regresar" name="btn_regresar" type="submit" class="btn btn-primary" >Regresar</button>  
-                             
-                    </h4>
-               
-               
+                
             </form>
         </div>
         

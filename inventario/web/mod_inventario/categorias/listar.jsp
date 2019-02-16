@@ -3,7 +3,6 @@
 <%@page import="javax.servlet.http.HttpServletRequest"%>
 <%@page import="javax.servlet.http.HttpServletResponse"%>
 <%@page import="javax.servlet.http.HttpSession"%>
-
         
 <%
      String user = (String) request.getSession().getAttribute("nombre");
@@ -19,6 +18,7 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <%
  List<Categoria> lista=Categoria.categoria_buscartodos();
  Iterator<Categoria> itCategoria=lista.iterator();
@@ -26,6 +26,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
@@ -36,9 +37,23 @@
        
 
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+       
+        
         <title>Categorias</title>
+        
+        
+        
+        
+        
+        
+            
     </head>
     <body>
+        
+        
+      
+ 
+        
          <!--Sección alerta-->
         <%
             String alerta="";
@@ -61,6 +76,7 @@
         <!--Fin Sección alerta-->
 
    
+    
          <h1>Categorias</h1> 
            <button type="button" onclick="return modalnuevo();" class="btn btn-primary" data-toggle="modal" data-target="#ModalNuevo"> Nuevo</button>  
           
