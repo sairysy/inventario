@@ -1,23 +1,11 @@
-<%@page import="javax.servlet.ServletException"%>
-<%@page import="javax.servlet.http.HttpServlet"%>
-<%@page import="javax.servlet.http.HttpServletRequest"%>
-
-<%@page import="javax.servlet.http.HttpSession"%>
-
-        
-<%
-     String user = (String) request.getSession().getAttribute("nombre");
-     
-        if(user==null){
-            response.sendRedirect("index.html");
-        }
-%>
-
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
@@ -31,12 +19,10 @@
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-</head>
-
-<body>
+    </head>
     
-    
-    <div id="wrapper">
+    <body>
+         <div id="wrapper">
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -45,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Menú</a>
+                <a class="navbar-brand" href="#">MenÃº</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -73,7 +59,7 @@
                            
                     <li>
                         
-                        <a href="mod_inventario/categorias/listar.jsp"  class="active"><i class="fa fa-edit fa-fw"></i> Categorías</a>
+                        <a href="mod_inventario/categorias/listar.jsp"  class="active"><i class="fa fa-edit fa-fw"></i> CategorÃ­as</a>
                     </li>
                    <li>
                         <a href="mod_inventario/clientes/listar.jsp"><i class="fa fa-edit"></i> Clientes</a>
@@ -84,7 +70,7 @@
                     <li>
                         <a href="mod_inventario/proveedores/listar.jsp"><i class="fa fa-edit"></i> Proveedores</a>
                     </li><li>
-                        <a href="mod_inventario/ordenes/listar.jsp"><i class="fa fa-edit"></i> Órdenes</a>
+                        <a href="mod_inventario/ordenes/listar.jsp"><i class="fa fa-edit"></i> Ã“rdenes</a>
                     </li><li>
                         <a href="mod_inventario/venta/listar.jsp"><i class="fa fa-edit"></i> Ventas</a>
                     </li>
@@ -95,7 +81,7 @@
                         <a href="mod_inventario/roles/listar.jsp"><i class="fa fa-edit"></i> Roles</a>
                     </li>
                     <li>
-                        <a href="mod_inventario/paginas/listar.jsp"><i class="fa fa-edit"></i> Páginas</a>
+                        <a href="mod_inventario/paginas/listar.jsp"><i class="fa fa-edit"></i> PÃ¡ginas</a>
                     </li>
 
      
@@ -131,8 +117,5 @@
     <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
 
-
-
-</body>
-
+    </body>
 </html>
